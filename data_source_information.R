@@ -1,6 +1,6 @@
 # App Title ----
 # Set the title for the app, displayed in top left corner
-title = "Sacramento Open Data"
+title = "Sacramento County Data"
 
 # Map Bounds ----
 # Set the bounds for points that will be displayed on the map
@@ -13,9 +13,9 @@ longitude_bounds = c(-125, -118)
 # Map Defaults ----
 # Set the default latitude, longitude, and zoom values for the map
 # Larger zoom values zoom in the map more
-map_center_latitude = 38.55
-map_center_longitude = -121.5
-map_zoom = 11
+map_center_latitude = 38.4
+map_center_longitude = -121.4
+map_zoom = 10
 
 # Dataset List ----
 # Define the datasets available in the app. Each list entry should include:
@@ -23,67 +23,55 @@ map_zoom = 11
 # - api: link to the API for the ArcGIS REST feature server layer of the dataset
 # - url: link to an information page for the dataset, linked in data_source_button
 dataset_list = list(
-  list(name = "City Maintained Trees",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/City_Maintained_Trees/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/b9b716e09b5048179ab648bb4518452b_0"),
-  list(name = "Dispatch Data From Current Year",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/cad_calls_year3/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/9efe7653009b448f8d177c1da0cc068f_0"),
-  list(name = "Dispatch Data From One Year Ago",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/cad_calls_year2/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/396e0bc72dcd4b038206f4a7239792bb_0"),
-  list(name = "Dispatch Data From Two Years Ago",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/cad_calls_year1/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/1692315bba964832b235a76755928c06_0"),
-  list(name = "Dispatch Data 2017",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/CAD_2017/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/d6c26871b5ca46dca132c7707d9e80e8_0"),
-  list(name = "Dispatch Data 2016",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/Sacramento_Dispatch_Data_2016/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/4bdb47c80f844d779795f62b35b83984_0"),
-  list(name = "Dispatch Data 2015",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/Sacramento_Dispatch_Data_2015/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/44ed3f7800c7479a910332b4b7795290_0"),
-  list(name = "Dispatch Data 2014",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/CAD_2014/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/e5f7cee6406941ed97e8a3109a301431_0"),
-  list(name = "EV Chargers",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/EV_Chargers/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/93efdbcdbc744210848dd7f601e622e3_0"),
-  list(name = "Fire Department 911 Call Response",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/GetNFIRSRespondReport/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/0b32edde7b14480e82d0d746108431db_0"),
-  list(name = "Fire Stations",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/Fire_Stations/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/614bdde2a4714b2098d4c2532fd2c6e7_0"),
-  list(name = "GPS Static Survey",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/GPS_StaticSurvey/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/5a5fb0a127ff44ad98f8a48640e9529c_0"),
-  list(name = "Hospitals",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/Hospitals/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/0363364d7ddb4ff4aadd7057187a7a05_0"),
-  list(name = "On Street Parking",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/ONSTREETPARKING/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/0060469c57864becb76a036d23236143_0"),
-  list(name = "Parks Public Restrooms",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/Parks_Public_Restrooms/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/b9e7fa6d1d104833b3f04268d7f682dc_0"),
-  list(name = "Schools",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/Schools/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/fd3677bd8ff44a2cbe6b8cc67a3d2c1c_0"),
-  list(name = "Signs",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/Signs/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/669f377150b74ae4863b5eefbdde39b7_0"),
+  list(name = "Addresses",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/Address/FeatureServer/0",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/54b1835ffb7b4e728a3506fe1a23618d_0"),
+  list(name = "Alert Stations",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/DepartmentofWaterResourcesAssets/FeatureServer/6",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/37cc6535316e43dbab8e1942ef1d7313_6"),
+  list(name = "Blind Ties",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/DepartmentofWaterResourcesAssets/FeatureServer/5",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/37cc6535316e43dbab8e1942ef1d7313_5"),
+  # list(name = "Business Licenses",
+  #      api = "https://utility.arcgis.com/usrsvcs/servers/f5aa2f10119146feb8079f7245e1dfe3/rest/services/OpenData/Finance_Business_Licenses/FeatureServer/0",
+  #      url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/f5aa2f10119146feb8079f7245e1dfe3_0"),
+  list(name = "Crime",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/Crime/FeatureServer/0",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/9a7f2df25a584ff9b55db274704ad7c9_0"),
+  list(name = "Drainage Manholes",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/DepartmentofWaterResourcesAssets/FeatureServer/4",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/37cc6535316e43dbab8e1942ef1d7313_4"),
+  list(name = "Drainage Pump Stations",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/DepartmentofWaterResourcesAssets/FeatureServer/3",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/37cc6535316e43dbab8e1942ef1d7313_3"),
+  list(name = "Drop Inlets",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/DepartmentofWaterResourcesAssets/FeatureServer/2",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/37cc6535316e43dbab8e1942ef1d7313_2"),
+  list(name = "Family Resource Centers",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/FamilyResourceCenters/FeatureServer/0",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/aaca82486bc2447f9ee1eafb0df4f560_0"),
+  # list(name = "Fictitious Business Names",
+  #      api = "https://utility.arcgis.com/usrsvcs/servers/ae42497840eb426d9354e9a07b5b0f84/rest/services/OpenData/Finance_Business_Licenses/FeatureServer/1",
+  #      url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/ae42497840eb426d9354e9a07b5b0f84_1"),
+  # list(name = "Food Inspections",
+  #      api = "https://utility.arcgis.com/usrsvcs/servers/2da20fdcac184579a03ecb346683e0ce/rest/services/OpenData/EMD_Food_Inspections/FeatureServer/0",
+  #      url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/2da20fdcac184579a03ecb346683e0ce_0"),
+  list(name = "Inlet Structures",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/DepartmentofWaterResourcesAssets/FeatureServer/1",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/37cc6535316e43dbab8e1942ef1d7313_1"),
+  list(name = "Outfall Structures",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/DepartmentofWaterResourcesAssets/FeatureServer/0",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/37cc6535316e43dbab8e1942ef1d7313_0"),
+  list(name = "Parcel Centriods",
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/ParcelCentroids/FeatureServer/0",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/7da6753c252b42af9f85751dc5b27bbb_0"),
+  # list(name = "Permits",
+  #      api = "https://utility.arcgis.com/usrsvcs/servers/82d30ebfb5624ca9b8880784e3ef79b7/rest/services/OpenData/Permits/FeatureServer/0",
+  #      url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/82d30ebfb5624ca9b8880784e3ef79b7_0"),
   list(name = "Street Lights",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/Street_Lights/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/3dca1faa7e0a40f79f31f95c0b2ebd17_0"),
-  list(name = "Streetcar Stops (Proposed)",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/Streetcar_Stops/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/5922bb984d8748d1a457164d4416dced_0"),
-  list(name = "Survey Benchmarks",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/SurveyBenchmarks/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/53244a1d3ca447d8a890ad6bbc43621b_0"),
-  list(name = "311 Calls",
-       api = "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/311Calls_OSC_View/FeatureServer/0",
-       url = "http://data.cityofsacramento.org/datasets/08794a6695b3483f889e9bef122517e9_0")
+       api = "https://services1.arcgis.com/5NARefyPVtAeuJPU/arcgis/rest/services/StreetLights/FeatureServer/0",
+       url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/78d28319133948e98f8eb133186fff7d_0")
+  # list(name = "311 Calls",
+  #      api = "https://utility.arcgis.com/usrsvcs/servers/3db804ea33c34b99a362df8d5a9e0ea8/rest/services/OpenData/311_Cases/FeatureServer/0",
+  #      url = "http://data-sacramentocounty.opendata.arcgis.com/datasets/3db804ea33c34b99a362df8d5a9e0ea8_0")
 )
