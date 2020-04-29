@@ -6,7 +6,6 @@ title = "Sacramento County Data"
 # Provide the link to the GitHub repo for the app
 github_link = "https://github.com/mvanbommel/SacCountyOpenData"
 
-
 # Map Bounds ----
 # Set the bounds for points that will be displayed on the map
 # To show all points, regardless of location, use values:
