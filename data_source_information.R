@@ -3,7 +3,7 @@
 title = "Sacramento County Data"
 
 # GitHub Link ----
-github_link = "https://github.com/mvanbommel/SacOpenData"
+github_link = "https://github.com/mvanbommel/SacCountyOpenData"
 
 # Map Bounds ----
 # Set the bounds for points that will be displayed on the map
